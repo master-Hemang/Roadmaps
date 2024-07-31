@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.header {
+  margin-bottom: 20px;
+  background-color: #e26725;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-page,
+.option-page {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-page .sidebar {
+  background-color: #e6f7ff;
+  border-right: 3px solid #4a90e2;
+}
+
+.option-page .sidebar {
+  background-color: #ffe6e6;
+  border-right: 1px solid #ff4500;
+}
+
+.text-primary{
+  color: #6a0dad;
+}
+.search-bar-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 300px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.card-link {
+  text-decoration: none;
+  color:#fe2200
+  ;
+}
+.card-link:hover {
+  color: #6a0dad;
+}
+
+.sidebar-item {
+  padding: 10px;
+}
+
+.sidebar-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebar-link:hover {
+  text-decoration: none;
+  color: #ff4500;
+}
+
+.sidebar-link:visited {
+  color: inherit;
+}
+
+.sidebar-link:focus,
+.sidebar-link:active {
+  color: inherit;
+}
+
+.option-content img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #6a0dad;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  border: 3px solid #d010d3 !important;
+  transition: transform 0.3s, border 0.3s;
+}
+
+.card:hover {
+  border: 2px solid orangered !important;
+}
+
+.card-image {
+  height: 290px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .option-sidebar {
+    width: 100%;
+  }
+
+  .option-content {
+    padding: 10px;
+  }
+
+  .option-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
